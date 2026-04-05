@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Riesgo de Mildiu</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#2e7d32">
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>🍇 Riesgo de Mildiu</h1>
+  <p class="sub">Datos reales de tu estación</p>
+
+  <div id="hoy" class="card">Cargando datos...</div>
+
+  <section class="info">
+    <h2>🌿 Condiciones del mildiu</h2>
+
+    <p>
+      El mildiu aparece con humedad alta, temperaturas suaves y hoja mojada.
+    </p>
+
+    <ul>
+      <li>💧 Humedad >85%</li>
+      <li>🌡️ 10°C - 25°C</li>
+      <li>🌧️ Lluvia + persistencia</li>
+    </ul>
+
+    <p class="nota">
+      Herramienta orientativa basada en datos reales de tu parcela.
+    </p>
+  </section>
+
+</div>
+
+<script src="app.js"></script>
+
+<script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("/service-worker.js");
+}
+</script>
+
+</body>
+</html>

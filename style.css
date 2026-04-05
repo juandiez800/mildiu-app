@@ -1,0 +1,30 @@
+body {
+  font-family: Arial;
+  background: #eef5ee;
+  margin: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 15px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  margin-top: 15px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.alto { border-left: 6px solid red; }
+.medio { border-left: 6px solid orange; }
+.bajo { border-left: 6px solid green; }
+
+.info {
+  margin-top: 20px;
+  background: #e0f2e0;
+  padding: 15px;
+  border-radius: 10px;
+}
